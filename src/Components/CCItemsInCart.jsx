@@ -11,7 +11,7 @@ export default class CCItemsInCart extends Component {
                 <h3>Items in cart:</h3>
                 {
                     this.props.itemsInCart.map((item) =>
-                        <CCItem item={item} removeFromCart={this.props.removeFromCart} inCart={true} />
+                        <CCItem key={item.id} item={item} removeFromCart={this.props.removeFromCart} inCart={true} />
                     )
 
                 }

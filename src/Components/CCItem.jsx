@@ -8,14 +8,14 @@ export default class CCItem extends Component {
     render() {
         if (this.props.inCart) {
             return (
-                <div class="card mb-3" style={{ Width: '14rem' }}>
-                    <div class="card-header">{this.props.item.name}
+                <div className="card mb-3" style={{ Width: '14rem' }}>
+                    <div className="card-header">{this.props.item.name}
                         <button type="button" class="close" aria-label="Close" onClick={() => this.props.removeFromCart(this.props.item)}>
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <div class="card-body">
-                        <p class="card-text">{this.props.item.name} for {this.props.item.price}$</p>
+                    <div className="card-body">
+                        <p className="card-text">{this.props.item.name} for {this.props.item.price}$</p>
                     </div>
                 </div>
             )

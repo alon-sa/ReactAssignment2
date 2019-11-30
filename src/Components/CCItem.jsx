@@ -10,7 +10,7 @@ export default class CCItem extends Component {
             return (
                 <div className="card mb-3" style={{ Width: '14rem' }}>
                     <div className="card-header">{this.props.item.name}
-                        <button type="button" class="close" aria-label="Close" onClick={() => this.props.removeFromCart(this.props.item)}>
+                        <button type="button" className="close" aria-label="Close" onClick={() => this.props.removeFromCart(this.props.item)}>
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
